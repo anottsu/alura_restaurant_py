@@ -24,3 +24,10 @@ if __name__ == '__main__':
     main()
 
 # teste com git
+
+# modelos) (base) anottsu@anottsu:~/Documents/ALURA PYTHON/OO_Sabor_express$ git push -u origin master
+# git@github.com: Permission denied (publickey).
+# fatal: Could not read from remote repository.
+
+# Please make sure you have the correct access rights
+# and the repository exists.
