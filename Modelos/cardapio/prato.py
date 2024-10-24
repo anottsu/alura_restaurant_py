@@ -8,6 +8,9 @@ class Prato(ItemCardapio):   # THE CLASS PRATO INHERITS METHODS AND CLASS FROM I
    # View on screen like string
     def __str__(self):
         return self._nome
+    
+    def aplicar_desconto(self):
+        self._preco -= (self._preco * 0.08)
 
 
     #OBJECTIVE: SET THIS PROJECT TO GITHUB VIA GIT...#
