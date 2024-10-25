@@ -1,0 +1,23 @@
+.dockerfile
+.respostas
+
+# Dependências e builds
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambientes virtuais
+venv/
+.env/
+
+# Configurações locais
+*.env
+
+# Arquivos de logs e dumps
+*.log
+*.sqlite3
+
+# Configurações de IDEs
+.vscode/
+.idea/
