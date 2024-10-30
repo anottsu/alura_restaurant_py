@@ -64,6 +64,14 @@ class Restaurante:
             if hasattr(item,'descricao'): 
                   mensagem_prato = f"{i}. Nome: {item._nome} | Preço R$: {round(item._preco,2)} | Descrição: {item.descricao}" 
                   print(mensagem_prato) 
+
+            elif hasattr(item,'descricao'): 
+                mensagem_sobremesa = f"{i}. Nome: {item._nome} | Preço R$: {round(item._preco,2)} | Descrição: {item.descricao}" 
+                print(mensagem_sobremesa)
+
             else:
                 mensagem_bebida = f"{i}. Nome: {item._nome} | Preço R$: {round(item._preco,2)} | Tamanho: {item.tamanho}" 
-                print(mensagem_bebida) 
+                print(mensagem_bebida)  
+
+
+#elif add para sobremesa com mensagem

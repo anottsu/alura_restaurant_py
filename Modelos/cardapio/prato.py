@@ -1,4 +1,4 @@
-from Modelos.cardapio.item_cardapio import ItemCardapio  #É PARA NAVEGAR ATE O LOCAL QUE DESEJA UTILIZAR#
+	from Modelos.cardapio.item_cardapio import ItemCardapio  #É PARA NAVEGAR ATE O LOCAL QUE DESEJA UTILIZAR#
 
 class Prato(ItemCardapio):   # THE CLASS PRATO INHERITS METHODS AND CLASS FROM Item.Cardapio#
     def __init__(self,nome,preco,descricao):
