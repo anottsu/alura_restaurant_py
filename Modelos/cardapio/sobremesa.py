@@ -13,4 +13,3 @@ class Sobremesa(ItemCardapio):
     def aplicar_desconto(self):
         pass
 
-# classe ok, herança de Itemcardapio, polimorfismo de desconto, retorno de string do nome
