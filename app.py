@@ -4,6 +4,7 @@
 # from Modelos.cardapio.sobremesa import Sobremesa
 
 import requests
+import json
 
 url = 'https://guilhermeonrails.github.io/api-restaurantes/restaurantes.json'
 response =requests.get(url)
@@ -27,7 +28,12 @@ if response.status_code == 200:
 else :
     'page not found' 
 
-print(dados_restaurante['McDonald’s']) 
+for nome_do_restaurante, dados in  dados_restaurante.items():  # variaveis criadas nome_do_restaurante e dados, elas vao iterar sobre dados_restaurante.items()
+    nome_do_arquivo =f'{nome_do_restaurante}.json'              # nome_do_Arquivo + formatação em string + a extensão .json
+    with open(nome_do_arquivo,'w') as file_restaurant: # abre e depois de executar, fecha o arquivo  para evitar corromper, nome do arquivo  + write , nome temporario do arquivo
+        json.dump(dados,file_restaurant,indent=4) # grava no formato json os dados passados. edentação
+
+
 
 # restaurante_01 = Restaurante('Sparrow','Marine')
 # bebida_suco = Bebida("Suco melão", 5.00, "Grande")
