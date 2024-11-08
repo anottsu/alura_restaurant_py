@@ -1,6 +1,6 @@
-From fastapi import fastAPI 
+from fastapi import FastAPI 
 
-app = fastAPI()
+app = FastAPI()
 
 @app.get('/api/hello')
 
